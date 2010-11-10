@@ -1,0 +1,30 @@
+Relased under GPL http://www.gnu.org/licenses/gpl-3.0.txt
+
+Installation:
+-------------------------------------
+Start Apache on a diffrent port for example 8080.
+Copy pfManualRegistration.php and pfForm.html to
+your PacketFence box into the root folder of the
+apache server you made above.
+
+You will have to edit pfManualRegistration.php to
+change the ldapSever variable on line 16 and the
+ldapDCRoot variable on line 17. Also on line 89
+you will need to change the location of the
+success page.
+
+
+Notes:
+-------------------------------------
+As of 11/10/2010 LDAP is the only supported method
+for auth. This only works if PacketFence already
+has a record of the macaddress in its database.
+
+
+TODO:
+-------------------------------------
+1) Use whatever PacketFence is using for
+authentication. Not just LDAP.
+
+2) More robost logic to decide if MAC should
+be added or edited
