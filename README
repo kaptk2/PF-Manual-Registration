@@ -17,14 +17,9 @@ success page.
 Notes:
 -------------------------------------
 As of 11/10/2010 LDAP is the only supported method
-for auth. This only works if PacketFence already
-has a record of the macaddress in its database.
-
+for auth.
 
 TODO:
 -------------------------------------
 1) Use whatever PacketFence is using for
 authentication. Not just LDAP.
-
-2) More robost logic to decide if MAC should
-be added or edited

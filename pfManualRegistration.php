@@ -68,7 +68,8 @@ function validateMAC($macAddress) {
 
 //Execute pfcmd on remote system
 function pfcmdExecute($username,$macAddress) {
-  exec('/usr/local/pf/bin/pfcmd node add '.$macAddress.' status="reg",pid="'.$username.'"');
+  exec('/usr/local/pf/bin/pfcmd person edit '.$username); //ensure user exists
+  exec('/usr/local/pf/bin/pfcmd node edit '.$macAddress.' status="reg",pid="'.$username.'"');
 }
 
   //Get Posted Variables
